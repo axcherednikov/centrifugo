@@ -13,10 +13,11 @@
         "php": "^8.2"
     },
     "require-dev": {
+        "bamarni/composer-bin-plugin": "^1.8",
         "ergebnis/composer-normalize": "^2.44",
+        "friendsofphp/php-cs-fixer": "^3.64",
         "phpunit/phpunit": "^11.4",
-        "rector/rector": "^1.2",
-        "friendsofphp/php-cs-fixer": "^3.64"
+        "rector/rector": "^1.2"
     },
     "minimum-stability": "stable",
     "autoload": {
@@ -26,7 +27,15 @@
     },
     "config": {
         "allow-plugins": {
+            "bamarni/composer-bin-plugin": true,
             "ergebnis/composer-normalize": true
+        }
+    },
+    "extra": {
+        "bamarni-bin": {
+            "bin-links": false,
+            "forward-command": true,
+            "target-directory": "vendor-bin"
         }
     }
 }

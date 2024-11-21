@@ -9,6 +9,9 @@
             "email": "excent63@gmail.com"
         }
     ],
+    "require": {
+        "php": "^8.2"
+    },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.44",
         "phpunit/phpunit": "^11.4",

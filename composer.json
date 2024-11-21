@@ -1,0 +1,22 @@
+{
+    "name": "axcherednikov/centrifugo",
+    "description": "Client for the Centrifugo",
+    "type": "library",
+    "require-dev": {
+        "rector/rector": "^1.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Axcherednikov\\Centrifugo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alexander Cherednikov",
+            "email": "excent63@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

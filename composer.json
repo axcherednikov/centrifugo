@@ -3,7 +3,8 @@
     "description": "Client for the Centrifugo",
     "type": "library",
     "require-dev": {
-        "rector/rector": "^1.2"
+        "rector/rector": "^1.2",
+        "phpunit/phpunit": "^11.4"
     },
     "license": "MIT",
     "autoload": {
@@ -17,6 +18,5 @@
             "email": "excent63@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
-    "require": {}
+    "minimum-stability": "stable"
 }

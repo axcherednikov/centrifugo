@@ -15,7 +15,8 @@
     "require-dev": {
         "ergebnis/composer-normalize": "^2.44",
         "phpunit/phpunit": "^11.4",
-        "rector/rector": "^1.2"
+        "rector/rector": "^1.2",
+        "friendsofphp/php-cs-fixer": "^3.64"
     },
     "minimum-stability": "stable",
     "autoload": {

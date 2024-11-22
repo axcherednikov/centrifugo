@@ -14,6 +14,19 @@ rector-fix: vendor ## Run the Rector's fix (https://getrector.org)
 	$(EXEC_PHP)  vendor-bin/rector/vendor/bin/rector process
 .PHONY: rector
 
+psalm: vendor ## Запустить полный статический анализ PHP кода при помощи Psalm (https://psalm.dev/)
+	$(EXEC_PHP) vendor-bin/psalm/vendor/bin/psalm --threads=4 $(file)
+.PHONY: psalm
+
+lint: vendor ## Проверить PHP code style при помощи PHP CS Fixer (https://github.com/FriendsOfPHP/PHP-CS-Fixer)
+	$(EXEC_PHP) vendor-bin/php-cs-fixer/vendor/bin/php-cs-fixer fix --dry-run --diff --verbose
+.PHONY: lint
+
+fixcs: vendor ## Исправить ошибки PHP code style при помощи PHP CS Fixer (https://github.com/FriendsOfPHP/PHP-CS-Fixer)
+	$(EXEC_PHP) vendor-bin/php-cs-fixer/vendor/bin/php-cs-fixer fix --diff --verbose
+.PHONY: fixcs
+
+
 help:
 	@awk ' \
 		BEGIN {RS=""; FS="\n"} \

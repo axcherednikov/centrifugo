@@ -1,4 +1,7 @@
+.idea
 /vendor-bin/**/vendor/
 
 /vendor/
 composer.lock
+
+.php-cs-fixer.cache
